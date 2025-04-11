@@ -50,7 +50,7 @@ use Laminas\Mvc\Application;
 <?php endif ?>
 
 <?php if (! empty($this->display_exceptions)) : ?>
-    <?php if (isset($this->exception) && $this->exception instanceof \Throwable) : ?>
+    <?php if (isset($this->exception) && $this->exception instanceof Throwable) : ?>
 <hr/>
 
 <h2>Additional information:</h2>

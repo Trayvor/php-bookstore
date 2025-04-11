@@ -45,10 +45,10 @@ class UserProfileController extends AbstractActionController
         $form->bind($user);
         $form->prepare();
 
-        if($this->getRequest()->isPost()) {
+        if ($this->getRequest()->isPost()) {
             $form->setData($this->params()->fromPost());
             if ($form->isValid()) {
-                $this->userService->updateUser($user, array($form->getData()));
+                $this->em->flush();
                 return $this->redirect()->toRoute('profile');
             }
         }

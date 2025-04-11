@@ -1,6 +1,9 @@
 <h2>Login</h2>
 <?php
-/** @var \Laminas\Form\Form $form */
+/** @var Form $form */
+
+use Laminas\Form\Form;
+
 $form->prepare();
 echo $this->form()->openTag($form);
 echo $this->formRow($form->get('email'));

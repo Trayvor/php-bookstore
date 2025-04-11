@@ -28,7 +28,7 @@ class LoginForm extends Form
         $this->add([
             'name' => 'submit',
             'type' => Submit::class,
-            'attributes' => ['value' => 'Register']
+            'attributes' => ['value' => 'Login']
         ]);
 
         $input_filter = new InputFilter();
