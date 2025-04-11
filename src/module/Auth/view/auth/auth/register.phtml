@@ -1,0 +1,11 @@
+<h2>Register</h2>
+<?php
+/** @var \Laminas\Form\Form $form */
+$form->prepare();
+echo $this->form()->openTag($form);
+echo $this->formRow($form->get('email'));
+echo $this->formRow($form->get('password'));
+echo $this->formRow($form->get('repeatPassword'));
+echo $this->formSubmit($form->get('submit'));
+echo $this->form()->closeTag();
+?>

@@ -1,0 +1,10 @@
+<h2>Edit Profile</h2>
+<?php
+$form->prepare();
+echo $this->form()->openTag($form);
+foreach (['firstName', 'lastName', 'mobilePhone', 'country', 'city', 'address', 'email'] as $f) {
+    echo $this->formRow($form->get($f));
+}
+echo $this->formSubmit($form->get('submit'));
+echo $this->form()->closeTag();
+?>

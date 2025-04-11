@@ -1,0 +1,4 @@
+<h2>My Profile</h2>
+<p><strong>Email:</strong> <?= $this->escapeHtml($user->getEmail()) ?></p>
+<p><strong>Name:</strong> <?= $this->escapeHtml($user->getFirstName() . ' ' . $user->getLastName()) ?></p>
+<a href="<?= $this->url('profile/edit') ?>">Edit</a> |
